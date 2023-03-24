@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import TopFold from "./components/TopFold";
+import Brandsintegration from "./components/Brandsintegration";
+import Footer from "./components/Footer";
+import InfoSection from "./components/InfoSection/index"
+import TrendingNFT from "./components/TrendingNFT";
+import Particles from "./components/Particle";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    
+    <div className="max-width">
 
-export default App;
+    <Header />
+    <TopFold />
+    
+    <TrendingNFT />
+    <InfoSection />
+  
+    <Particles />
+    <Brandsintegration />
+    <Footer />
+    </div>
+  )
+};
+
+export default App

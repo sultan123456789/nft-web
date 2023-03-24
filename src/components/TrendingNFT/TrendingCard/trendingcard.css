@@ -1,0 +1,63 @@
+.trending-card{
+    flex-direction: column;
+   padding: 55px 55px;
+}
+
+.tc-inner-wrapper{
+    background: var(--text-gradient-2);
+    border-radius: 18px;
+    padding: 2px;
+}
+
+.tc-content {
+    background-color: var(--background);
+    border-radius: 18px;
+    padding: 18px;
+}
+
+.tc-nft{
+    text-transform: uppercase;
+    padding: 10px;
+    color: rgb(0, 255, 251);
+}
+
+.tc-user-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin : 16px 0px
+}
+
+.tc-user-logo{
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 12px;
+    border-radius: 18px;
+}
+
+.tc-ui-left{
+    display: flex;
+    flex: 1;
+}
+
+.tc-ui-username{
+    color: aquamarine;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tc-ui-userhandle{
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity :1;
+    width: 10px;
+    font-style: oblique;
+    text-align: center;
+    padding-bottom: 10px;
+    color: aquamarine;
+}
+
+.tn-btn{
+    font-size: 14px;
+}

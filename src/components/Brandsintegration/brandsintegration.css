@@ -1,0 +1,23 @@
+.title{
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  
+.brands-integration {
+    width: 80%;
+    display: flex;
+    justify-content: center; /* Mengatur posisi horizontal gambar ke tengah */
+    align-items: center; /* Mengatur posisi vertikal gambar ke tengah */
+    height: 50vh;
+    margin-left: 100px;
+    
+    
+  }
+
+.bi-logos{
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: contain; /* Mengatur gambar agar sesuai dengan proporsinya */
+    padding: 0px 50px;
+}
