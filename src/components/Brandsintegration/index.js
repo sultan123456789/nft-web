@@ -6,7 +6,7 @@ const Brandsintegration = () => {
     return (
 //    <span>Technology Supported</span>
   <div>
-  <div className="title absolute-center"> <span className="heading-gradient" >Supported Technologies</span>
+  <div className="title absolute-center"> <span className="heading-gradient" >Supported</span>
   </div>
   <div className="brands-integration">
     {/* <h1 >Technology Supported</h1> */}

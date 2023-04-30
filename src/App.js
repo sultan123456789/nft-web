@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Navbar from "./components/Navbar"
 import Header from "./components/Header";
 import TopFold from "./components/TopFold";
 import Brandsintegration from "./components/Brandsintegration";
@@ -13,7 +14,7 @@ const App = () => {
   return (
     
     <div className="max-width">
-
+    <Navbar />
     <Header />
     <TopFold />
     

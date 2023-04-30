@@ -1,6 +1,47 @@
 import React from "react";
 import Button from "../../common/Button";
 import "./topfold.css";
+// import { ethers } from 'ethers';
+
+
+//helper function
+
+
+
+// Helper Functions
+
+// Requests access to the user's META MASK WALLET
+// https://metamask.io
+async function requestAccount() {
+  console.log('Requesting account...');
+
+  // Check if MetaMask extension exists 
+  if(window.ethereum) {
+    console.log('detected');
+
+    try {
+      const accounts = await window.ethereum.request({
+        method: "eth_requestAccounts",
+      });
+      console.log(accounts);
+     
+    } catch (error) {
+      console.log('Error connecting...');
+    }
+
+  } else {
+    alert('MetaMask not detected');
+  }
+}
+
+// Create a provider to interact with a smart contract
+// async function connectWallet() {
+//   if(typeof window.ethereum !== 'undefined') {
+//     await requestAccount();
+
+//     const provider = new ethers.providers.Web3Provider(window.ethereum);
+//   }
+// }
 
 const TopFold = () => {
   return (
@@ -18,7 +59,15 @@ const TopFold = () => {
       <div className="tf-left-btns">
       <Button btnType = "PRIMARY" btnText="EXPLORE"/>
       <Button  btnType = "SECONDARY" btnText="Create NFTs" customClass='tf-left-secondary-btn' />
+      {/* <Button btnType = "SECONDARY" btnText="Connect Wallet" customClass='tf-left-secondary-btn' onCLick={requestAccount}/> */}
+      <button cursor="pointer" Class='buttonku'
+        
+        onClick={requestAccount}
+        
+        >Connect Account</button>
+   
       </div>
+      
       <div className="tf-left-infoStats">
         
       
